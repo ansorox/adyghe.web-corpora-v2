@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Адыгейский корпус</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="../../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="../../vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/creative.css" rel="stylesheet">
+    <link href="../../css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" href="../../img/favicon1.png" type="image/png"> -->
+    <link rel="icon" type="image/x-icon" href="../../img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container nav-container">
+        <div class="navbar-brand">
+          <a href="../../">
+            <img src="../../img/64px-AdygheFlag.png" class="mr-3" style="opacity: 0.8">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../../">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../how_to_use/">Как пользоваться</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="../annotation/">Разметка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../bibliography/">Библиография</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="../about_authors/">О составителях</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger ml-2" href="../../en/annotation/">EN</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="about_corpora" style="padding-top: 0">
+
+      <div id="wrapper" class="toggled">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+
+
+<div id="about_tagset">
+  <h2 class="h2">Разметка корпуса</h2>
+  <div id="toc_annotation" class="card mb-4 p-2 bg-light border-light">
+    <div class="card-body">
+      <ul>
+        <li><a href="#gramm_annotation">Грамматическая информация</a></li>
+        <ul>
+          <li><a href="#gloss_annotation">Глоссирование</a></li>
+          <li><a href="#tag_annotation">Грамматические тэги</a></li>
+        </ul>
+        <li><a href="#syntactic_annotation">Синтаксическая информация</a></li>
+        <li><a href="#translation_annotation">Перевод на русский язык</a></li>
+        <li><a href="#other_annotation">Прочая информация</a></li>
+        <li><a href="#possible_mistakes">Возможные ошибки</a></li>
+        <ul>
+          <li><a href="#text_mistakes">Ошибки в тексте</a></li>
+          <li><a href="#parsing_mistakes">Ошибки в морфологическом анализе</a></li>
+          <li><a href="#pos_mistakes">Ошибки в частеречной характеристике</a></li>
+          <li><a href="#alignment_mistakes">Ошибки в выравнивании текста и русского перевода</a></li>
+          <li><a href="#attribution_mistakes">Ошибки в датировке текста</a></li>
+        </ul>
+      </ul>     
+    </div>          
+  </div>
+
+
+
+
+  <h3 id="gramm_annotation" class="h3">Грамматическая информация</h3>
+  <div class="annotation_info" id="gramm_annotation_info">
+    <p class="mb-2">Корпус обеспечивает два (комбинируемых) способа поиска по грамматической информации – <a href="#gloss_annotation">глоссирование</a> и <a href="#tag_annotation">грамматические тэги</a>.</p>
+    <p class="mb-2">Адыгейский корпус отражает конкретную типологически ориентированную  грамматическую концепцию адыгейского языка – в первую очередь связанную с работами московской группы исследователей, базирующихся в Российском государственном гуманитарном университете и в НИУ “Высшая школа экономики”. Основные особенности этой концепции, существенные для использования корпуса, изложены в <a href="#" target="_blank">***</a>. Более детальное изложение концепции можно найти в <a href="#" target="_blank">***</a>, хотя некоторые его положения и многие обозначения уже устарели и в корпусе не учитываются. Вместе с тем, мы постарались учесть и традиционные трактовки – в первую очередь при альтернативах выбора ярлыков грамматических тэгов.</p>
+  </div>
+
+  <h5 id="gloss_annotation" class="h5">Глоссирование</h5>
+  <div class="annotation_info" id="gloss_annotation_info">
+    <p class="mb-2">Словоформа разбивается на морфемы, и каждой морфеме приписывается глосса – краткое условное обозначение. При поиске по глоссам у пользователя есть возможность учитывать их взаимный порядок или найти слова, содержащие один и тот же аффикс несколько раз. Список аффиксов представлен <a href="#gloss_annotation_list">ниже***</a>. Для некоторых аффиксов (аппликативы, модально-временные показатели, личные префиксы) используются специальные <a href="#gloss_shortcuts">надкатегории</a>, с помощью которых можно проводить поиск с учётом любого аффикса из соответствующего подкласса.</p>
+    <p class="mb-2">Адыгейский корпус не учитывает многие непродуктивные морфемы (в том числе морфемы, выделяющиеся в первую очередь этимологически и не функционирующие в современном языке).</p>
+
+    <div id="gloss_annotation_list">
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingGloss">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseGloss" aria-expanded="false" aria-controls="collapseGloss">Список глосс</button>
+          </h5>
+        </div>
+        <div id="collapseGloss" class="collapse" aria-labelledby="headingGloss">
+          <div class="card-body">
+            <table class="table table-sm">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">глосса</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1PL.ABS</td>
+                  <td>абсолютивный префикс 1 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>1PL.ERG</td>
+                  <td>эргативный префикс 1 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>1PL.IO</td>
+                  <td>косвеннообъектный префикс 1 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>1PL.P</td>
+                  <td>посессивный префикс 1 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>1PL.PO</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>1SG.ABS</td>
+                  <td>абсолютивный префикс 1 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>1SG.ERG</td>
+                  <td>эргативный префикс 1 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>1SG.IO</td>
+                  <td>косвеннообъектный префикс 1 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>1SG.P</td>
+                  <td>посессивный префикс 1 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>1SG.PO</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2PL.ABS</td>
+                  <td>абсолютивный префикс 2 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>2PL.ERG</td>
+                  <td>эргативный префикс 2 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>2PL.IO</td>
+                  <td>косвеннообъектный префикс 2 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>2PL.P</td>
+                  <td>посессивный префикс 2 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>2PL.PO</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>2SG.ABS</td>
+                  <td>абсолютивный префикс 2 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>2SG.ERG</td>
+                  <td>эргативный префикс 2 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>2SG.IO</td>
+                  <td>косвеннообъектный префикс 2 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>2SG.P</td>
+                  <td>посессивный префикс 2 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>2SG.PO</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3PL.ERG</td>
+                  <td>эргативный префикс 3 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>3PL.IO</td>
+                  <td>косвеннообъектный префикс 3 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>3PL.P</td>
+                  <td>посессивный префикс 3 л. мн. ч.</td>
+                </tr>
+                <tr>
+                  <td>3PL.PO</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>3SG.ERG</td>
+                  <td>эргативный префикс 3 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>3SG.P</td>
+                  <td>посессивный префикс 3 л. ед. ч.</td>
+                </tr>
+                <tr>
+                  <td>3SG.PO</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>ABS</td>
+                  <td>абсолютив (именительный падежа)</td>
+                </tr>
+                <tr>
+                  <td>ABSTR</td>
+                  <td>суффикс абстрактных имён (-гъэ)</td>
+                </tr>
+                <tr>
+                  <td>ADD</td>
+                  <td>аддитив (-и/-ри)</td>
+                </tr>
+                <tr>
+                  <td>ADJ</td>
+                  <td>атрибутив (-рэ)</td>
+                </tr>
+                <tr>
+                  <td>ADV</td>
+                  <td>адвербиалис</td>
+                </tr>
+                <tr>
+                  <td>APL</td>
+                  <td>ассоциативное множественное число (-тхэ)</td>
+                </tr>
+                <tr>
+                  <td>APPR</td>
+                  <td>аппрехенсив 'как бы не' (-къо)</td>
+                </tr>
+                <tr>
+                  <td>ASRT</td>
+                  <td>ассертив (-пэ)</td>
+                </tr>
+                <tr>
+                  <td>AUG</td>
+                  <td>аугментатив ‘большой’ (-шхо)</td>
+                </tr>
+                <tr>
+                  <td>AUX</td>
+                  <td>инкорпорированный вспомогательный глагол (-щты- в сочетаниях щты-гъэ, щты-н и т.д.)</td>
+                </tr>
+                <tr>
+                  <td>BEN</td>
+                  <td>бенефактивный аппликатив (фэ-)</td>
+                </tr>
+                <tr>
+                  <td>CAR</td>
+                  <td>каритив (-нчъэ)</td>
+                </tr>
+                <tr>
+                  <td>CAUS</td>
+                  <td>каузатив</td>
+                </tr>
+                <tr>
+                  <td>COM</td>
+                  <td>комитативный аппликатив / совместность (дэ-)</td>
+                </tr>
+                <tr>
+                  <td>COND</td>
+                  <td>кондиционал / условное наклонение (-мэ)</td>
+                </tr>
+                <tr>
+                  <td>CONT</td>
+                  <td>инкорпорированный глагольный корень -лӏэ-</td>
+                </tr>
+                <tr>
+                  <td>COORD</td>
+                  <td>сочинительная клитика -рэ</td>
+                </tr>
+                <tr>
+                  <td>CS</td>
+                  <td>консекутив ‘так что’ (-ти)</td>
+                </tr>
+                <tr>
+                  <td>CS2</td>
+                  <td>консекутив ‘так что’ (-шъ)</td>
+                </tr>
+                <tr>
+                  <td>DAT</td>
+                  <td>префикс дативной (косвеннообъектной) деривации</td>
+                </tr>
+                <tr>
+                  <td>DIFICIL</td>
+                  <td>дифицилитив 'сложно'</td>
+                </tr>
+                <tr>
+                  <td>DIR</td>
+                  <td>префикс директива (къэ-)</td>
+                </tr>
+                <tr>
+                  <td>DOWN</td>
+                  <td>инкорпорированный глагольный корень -хы- 'вниз'</td>
+                </tr>
+                <tr>
+                  <td>DYN</td>
+                  <td>динамический префикс или суффикс</td>
+                </tr>
+                <tr>
+                  <td>EL</td>
+                  <td>инкорпорированный глагольный корень -кӏы-</td>
+                </tr>
+                <tr>
+                  <td>EMP</td>
+                  <td>эмфатическая клитика -ба</td>
+                </tr>
+                <tr>
+                  <td>EXC1</td>
+                  <td>интенсификатор -щэ</td>
+                </tr>
+                <tr>
+                  <td>EXC2</td>
+                  <td>интенсификатор -ӏо</td>
+                </tr>
+                <tr>
+                  <td>FACIL</td>
+                  <td>фацилитив 'легко'</td>
+                </tr>
+                <tr>
+                  <td>FUT</td>
+                  <td>будущее время</td>
+                </tr>
+                <tr>
+                  <td>GENLOC</td>
+                  <td>общий локативный аппликатив (щы-)</td>
+                </tr>
+                <tr>
+                  <td>ILL</td>
+                  <td>инкорпорированный глагольный корень -хьэ-</td>
+                </tr>
+                <tr>
+                  <td>IMP2</td>
+                  <td>императив на орэ-</td>
+                </tr>
+                <tr>
+                  <td>INADV</td>
+                  <td>инадвертивный аппликатив / ненамеренность (ӏэкӏэ-)</td>
+                </tr>
+                <tr>
+                  <td>INC</td>
+                  <td>инцептив</td>
+                </tr>
+                <tr>
+                  <td>INCH</td>
+                  <td>инхоатив (-жьэ)</td>
+                </tr>
+                <tr>
+                  <td>INS</td>
+                  <td>инструменталис (творительный падеж)</td>
+                </tr>
+                <tr>
+                  <td>INT1</td>
+                  <td>интенсификатор -кӏэе</td>
+                </tr>
+                <tr>
+                  <td>INT2</td>
+                  <td>интенсификатор -бзэ</td>
+                </tr>
+                <tr>
+                  <td>INT3</td>
+                  <td>интенсификатор -е</td>
+                </tr>
+                <tr>
+                  <td>LNK</td>
+                  <td>соединительная морфема при присоединении числительных</td>
+                </tr>
+                <tr>
+                  <td>LOC</td>
+                  <td>один из нескольких специальных локативных аппликативов (кроме щы-)</td>
+                </tr>
+                <tr>
+                  <td>MAL</td>
+                  <td>малефактивный аппликатив (шӏо-)</td>
+                </tr>
+                <tr>
+                  <td>MOD</td>
+                  <td>модальный суффикс / масдар (-н)</td>
+                </tr>
+                <tr>
+                  <td>MULT</td>
+                  <td>мультипликативный суффикс числительных</td>
+                </tr>
+                <tr>
+                  <td>NEG</td>
+                  <td>отрицательный префикс или суффикс</td>
+                </tr>
+                <tr>
+                  <td>NMLZ.AG</td>
+                  <td>абстрактная номинализация (-гъэ)</td>
+                </tr>
+                <tr>
+                  <td>NMLZ.LOC</td>
+                  <td>номинализация со значением места (-пӏэ)</td>
+                </tr>
+                <tr>
+                  <td>NMLZ.MNR</td>
+                  <td>номинализация со значением способа действия (-кӏэ)</td>
+                </tr>
+                <tr>
+                  <td>NMLZ.TIME</td>
+                  <td>номинализация со значением времени (-гъо)</td>
+                </tr>
+                <tr>
+                  <td>OBL</td>
+                  <td>косвенный падеж (эргатив)</td>
+                </tr>
+                <tr>
+                  <td>OBL.PL</td>
+                  <td>суффикс косвенного падежа (эргатива) множественного числа (-мэ)</td>
+                </tr>
+                <tr>
+                  <td>OPT</td>
+                  <td>оптатив (желательное наклонение)</td>
+                </tr>
+                <tr>
+                  <td>ORD</td>
+                  <td>порядковое числительное</td>
+                </tr>
+                <tr>
+                  <td>PITY</td>
+                  <td>глагольный суффикс -гущэ 'жаль'</td>
+                </tr>
+                <tr>
+                  <td>PL</td>
+                  <td>суффикс множественного числа</td>
+                </tr>
+                <tr>
+                  <td>POSS</td>
+                  <td>посессивный префикс при отторжимой принадлежности</td>
+                </tr>
+                <tr>
+                  <td>POT</td>
+                  <td>потенциалис (-шъу)</td>
+                </tr>
+                <tr>
+                  <td>PRED</td>
+                  <td>предикативная форма местоимений (-ры)</td>
+                </tr>
+                <tr>
+                  <td>PST</td>
+                  <td>прошедшее время</td>
+                </tr>
+                <tr>
+                  <td>PURP</td>
+                  <td>именной суффикс -хьа</td>
+                </tr>
+                <tr>
+                  <td>Q</td>
+                  <td>вопросительная частица (-а)</td>
+                </tr>
+                <tr>
+                  <td>RE</td>
+                  <td>суффикс реверсива/рефактива ‘назад, снова’ (-жьы)</td>
+                </tr>
+                <tr>
+                  <td>REC.ERG</td>
+                  <td>реципрокальный (взаимно-возвратный) префикс эргатива</td>
+                </tr>
+                <tr>
+                  <td>REC.IO</td>
+                  <td>реципрокальный (взаимно-возвратный) косвеннообъектный префикс</td>
+                </tr>
+                <tr>
+                  <td>REC.P</td>
+                  <td>реципрокальный (взаимно-возвратный) посессивный префикс</td>
+                </tr>
+                <tr>
+                  <td>REL.ERG</td>
+                  <td>относительный префикс эргатива</td>
+                </tr>
+                <tr>
+                  <td>REL.IO</td>
+                  <td>относительный косвеннообъектный префикс</td>
+                </tr>
+                <tr>
+                  <td>REL.P</td>
+                  <td>относительный посессивный префикс</td>
+                </tr>
+                <tr>
+                  <td>REL.SUB</td>
+                  <td>относительный префикс факта / образа действия (зэрэ-)</td>
+                </tr>
+                <tr>
+                  <td>REL.TMP</td>
+                  <td>относительный префикс времени</td>
+                </tr>
+                <tr>
+                  <td>RFL.ABS</td>
+                  <td>рефлексивный (возвратный) абсолютивный префикс</td>
+                </tr>
+                <tr>
+                  <td>RFL.IO</td>
+                  <td>рефлексивный (возвратный) косвеннообъектный префикс</td>
+                </tr>
+                <tr>
+                  <td>SEEM</td>
+                  <td>глагольный корень 'казаться'</td>
+                </tr>
+                <tr>
+                  <td>SIM</td>
+                  <td>суффикс одновременности (-зэ)</td>
+                </tr>
+                <tr>
+                  <td>TRANS</td>
+                  <td>транслативный ‘через’ / инструментальный аппликатив (ры-)</td>
+                </tr>
+                <tr>
+                  <td>UP</td>
+                  <td>инкорпорированный глагольный корень -е- 'вверх</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="gloss_shortcuts">
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingGlossShortcuts">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseGlossShortcuts" aria-expanded="false" aria-controls="collapseGlossShortcuts">Группы глосс
+            </button>
+          </h5>
+        </div>
+        <div id="collapseGlossShortcuts" class="collapse" aria-labelledby="headingTagShortcuts">
+          <div class="card-body">
+            <table class="table table-sm" id="tag_shortcuts">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">обозначение группы</th>
+                    <th scope="col">глоссы, входящие в группу</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>case</td>
+                  <td>OBL, OBL.PL, ABS, ERG, INS, ADV</td>
+                </tr>
+                <tr>
+                  <td>nom</td>
+                  <td>ABS</td>
+                </tr>
+                <tr>
+                  <td>erg</td>
+                  <td>OBL, OBL.PL</td>
+                </tr>
+                <tr>
+                  <td>app</td>
+                  <td>DAT, BEN, MAL, LOC, GENLOC, COM, INSTR, INADV</td>
+                </tr>
+                <tr>
+                  <td>pers</td>
+                  <td>1SG.ABS, 1SG.ERG, 1SG.IO, 2SG.ABS, 2SG.ERG, 2SG.IO, 3SG.ABS, 3SG.ERG, 3SG.IO, 1PL.ABS, 1PL.ERG, 1PL.IO, 2PL.ABS, 2PL.ERG, 2PL.IO, 3PL.ABS, 3PL.ERG, 3PL.IO, REL.ABS, REL.ERG, REL.IO, REC.ABS, REC.ERG, REC.IO, RFL.ABS, RFL.ERG, RFL.IO</td>
+                </tr>
+                <tr>
+                  <td>pers.abs</td>
+                  <td>1SG.ABS, 2SG.ABS, 3SG.ABS, 1PL.ABS, 2PL.ABS, 3PL.ABS, REL.ABS, REC.ABS, RFL.ABS</td>
+                </tr>
+                <tr>
+                  <td>pers.erg</td>
+                  <td>1SG.ERG, 2SG.ERG, 3SG.ERG, 1PL.ERG, 2PL.ERG, 3PL.ERG, REL.ERG, REC.ERG, RFL.ERG</td>
+                </tr>
+                <tr>
+                  <td>pers.io</td>
+                  <td>1SG.IO, 2SG.IO, 3SG.IO, 1PL.IO, 2PL.IO, 3PL.IO, REL.IO, REC.IO, RFL.IO</td>
+                </tr>
+                <tr>
+                  <td>pers.p</td>
+                  <td>1SG.P, 2SG.P, 3SG.P, 1PL.P, 2PL.P, 3PL.P, REL.P, REC.P</td>
+                </tr>
+                <tr>
+                  <td>tense</td>
+                  <td>PST, PST2, FUT</td>
+                </tr>
+                <tr>
+                  <td>sfx</td>
+                  <td>RE, ILL, EL, CONT</td>
+                </tr>
+                <tr>
+                  <td>int</td>
+                  <td>INT1, INT2, INT3</td>
+                </tr>
+                <tr>
+                  <td>exc</td>
+                  <td>EXC1, EXC2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <h5 id="tag_annotation" class="h5">Грамматические тэги</h5>
+  <div class="annotation_info" id="tag_annotation_info">
+    <p class="mb-2">Слову приписывается набор специальных помет — грамматических тэгов, ассоциирующих его с частью речи, грамматическими категориями, наличием тех или иных аффиксов и т.д. Список тэгов представлен <a href="#tag_annotation_list">ниже</a>.</p>
+    <p class="mb-2">Для многих категорий имеется несколько вариантов ввода тэгов – латиницей и кириллицей (с помощью абстрактного обозначения категории или условного обозначения конкретного аффикса).</p>
+    <p class="mb-2">В отдельных случаях слову могут быть приписаны противоречащие тэги. Это касается частеречной информации: слово с именным корнем, обрамлённым глагольными аффиксами, получает одновременно две пометы – как имя и как глагол. Напротив, слово с глагольным корнем и суффиксом номинализации трактуется как имя, поскольку его трактовка как глагольной формы легко обеспечивается поиском по показателям номинализации.</p>
+    <p class="mb-2">Информация в глоссах и тэгах частично дублируется, но не полностью совпадает. Например, префиксы, выражающие одновременно лицо и число субъекта, получают одну глоссу (например, 1SG.ABS), в то время как содержащему такой префикс слову приписывается два грамматических тэга, один для лица (1.abs) и один для числа (1.sg).</p>
+
+    <div id="tag_annotation_list">
+
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Части речи
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+          <div class="card-body">
+            <table class="table table-sm" id="parts_of_speech">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">тэг</th>
+                  <th scope="col">кириллический вариант</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>A</td>
+                  <td>прил</td>
+                  <td>прилагательное</td>
+                </tr>
+                <tr>
+                  <td>AD</td>
+                  <td>нар</td>
+                  <td>наречие</td>
+                </tr>
+                <tr>
+                  <td>APRO</td>
+                  <td>мприл</td>
+                  <td>местоимение-прилагательное</td>
+                </tr>
+                <tr>
+                  <td>CONJ</td>
+                  <td>союз</td>
+                  <td>союз</td>
+                </tr>
+                <tr>
+                  <td>FORMULA</td>
+                  <td>форм</td>
+                  <td>речевая формула</td>
+                </tr>
+                <tr>
+                  <td>N</td>
+                  <td>сущ</td>
+                  <td>существительное</td>
+                </tr>
+                <tr>
+                  <td>NPRO</td>
+                  <td>мсущ</td>
+                  <td>местоимение-существительное</td>
+                </tr>
+                <tr>
+                  <td>NUM</td>
+                  <td>числ</td>
+                  <td>числительное</td>
+                </tr>
+                <tr>
+                  <td>POST</td>
+                  <td>посл</td>
+                  <td>послелог</td>
+                </tr>
+                <tr>
+                  <td>PRO</td>
+                  <td></td>
+                  <td>другое местоимение</td>
+                </tr>
+                <tr>
+                  <td>V</td>
+                  <td>гл</td>
+                  <td>глагол</td>
+                </tr>
+                <tr>
+                  <td>NtoV</td>
+                  <td>сущгл</td>
+                  <td>собственно глагольная морфология на основе существительного или прилагательного</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Личные глагольные префиксы
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+          <div class="card-body">
+            <table class="table table-sm" id="pers_verbal">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">тэг</th>
+                  <th scope="col">кириллический вариант</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.abs</td>
+                  <td>1.им</td>
+                  <td>1-е лицо абсолютивного аргумента (= непереходного подлежащего / переходного прямого дополнения)</td>
+                </tr>
+                <tr>
+                  <td>1.erg</td>
+                  <td>1.эрг</td>
+                  <td>1-е лицо эргативного аргумента (= переходного подлежащего)</td>
+                </tr>
+                <tr>
+                  <td>1.io</td>
+                  <td>1.косв</td>
+                  <td>1-е лицо косвенного объекта</td>
+                </tr>
+                <tr>
+                  <td>2.abs</td>
+                  <td>2.им</td>
+                  <td>2-е лицо абсолютивного аргумента (= непереходного подлежащего / переходного прямого дополнения)</td>
+                </tr>
+                <tr>
+                  <td>2.erg</td>
+                  <td>2.эрг</td>
+                  <td>2-е лицо эргативного аргумента (= переходного подлежащего)</td>
+                </tr>
+                <tr>
+                  <td>2.io</td>
+                  <td>2.косв</td>
+                  <td>2-е лицо косвенного объекта</td>
+                </tr>
+                <tr>
+                  <td>3.erg</td>
+                  <td>3.эрг</td>
+                  <td>3-е лицо эргативного аргумента (= переходного подлежащего)</td>
+                </tr>
+                <tr>
+                   <td>3.io</td>
+                  <td>3.косв</td>
+                  <td>3-е лицо косвенного объекта</td>
+                </tr>
+                <tr>
+                  <td>sg.abs</td>
+                  <td>ед.им</td>
+                  <td>единственное число абсолютивного аргумента (= непереходного подлежащего / переходного прямого дополнения)</td>
+                </tr>
+                <tr>
+                  <td>sg.erg</td>
+                  <td>ед.эрг</td>
+                  <td>единственное число эргативного аргумента (= переходного подлежащего)</td>
+                </tr>
+                <tr>
+                  <td>sg.io</td>
+                  <td>ед.косв</td>
+                  <td>единственное число косвенного объекта</td>
+                </tr>
+                <tr>
+                  <td>pl.abs</td>
+                  <td>мн.им</td>
+                  <td>множественное число абсолютивного аргумента (= непереходного подлежащего / переходного прямого дополнения)</td>
+                </tr>
+                <tr>
+                  <td>pl.erg</td>
+                  <td>мн.эрг</td>
+                  <td>множественное число эргативного аргумента (= переходного подлежащего)</td>
+                </tr>
+                <tr>
+                  <td>pl.io</td>
+                  <td>мн.косв</td>
+                  <td>множественное число косвенного объекта</td>
+                </tr>
+                <tr>
+                  <td>rfl.abs</td>
+                  <td>возвр.им</td>
+                  <td>рефлексивный (возвратный) абсолютивный аргумент</td>
+                </tr>
+                <tr>
+                  <td>rfl.io</td>
+                  <td>возвр.косв</td>
+                  <td>рефлексивный (возвратный) косвенный объект</td>
+                </tr>
+                <tr>
+                  <td>rec.erg</td>
+                  <td>взаим.эрг</td>
+                  <td>реципрокальные (взаимно-возвратные) эргативные аргументы</td>
+                </tr>
+                <tr>
+                  <td>rec.io</td>
+                  <td>взаим.косв</td>
+                  <td>реципрокальные (взаимно-возвратные) косвенные объекты</td>
+                </tr>
+                <tr>
+                  <td>rel.erg</td>
+                  <td>отн.эрг</td>
+                  <td>относительный эргативный аргумент</td>
+                </tr>
+                <tr>
+                  <td>rel.io</td>
+                  <td>отн.косв</td>
+                  <td>относительный косвенный объект</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Другие префиксы
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+          <div class="card-body">
+            <table class="table table-sm" id="other_pref">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">тэг</th>
+                  <th scope="col">кириллический вариант</th>
+                  <th scope="col">морфема</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ben</td>
+                  <td>бен</td>
+                  <td>фэ</td>
+                  <td>бенефактивный аппликатив (= бенефактивная объектная версия / префиксальный потенциалис фэ-)</td>
+                </tr>
+                <tr>
+                  <td>caus</td>
+                  <td>кауз</td>
+                  <td></td>
+                  <td>каузатив (гъэ-)</td>
+                </tr>
+                <tr>
+                  <td>com</td>
+                  <td>совм</td>
+                  <td></td>
+                  <td>комитативный аппликатив / совместность (дэ-)</td>
+                </tr>
+                <tr>
+                  <td>dat</td>
+                  <td>дат</td>
+                  <td></td>
+                  <td>дативная (косвеннообъектная) деривация</td>
+                </tr>
+                <tr>
+                  <td>dir</td>
+                  <td>напр</td>
+                  <td>къэ</td>
+                  <td>директив / направительный преверб (къэ-)</td>
+                </tr>
+                <tr>
+                  <td>dyn</td>
+                  <td>дин</td>
+                  <td></td>
+                  <td>динамичность</td>
+                </tr>
+                <tr>
+                  <td>genloc</td>
+                  <td></td>
+                  <td>щы</td>
+                  <td>общий локативный аппликатив (щы-)</td>
+                </tr>
+                <tr>
+                  <td>inadv</td>
+                  <td>инадв</td>
+                  <td>IэкIэ</td>
+                  <td>инадвертивный аппликатив / ненамеренность</td>
+                </tr>
+                <tr>
+                  <td>loc</td>
+                  <td>лок</td>
+                  <td></td>
+                  <td>один из специальных локативных аппликативов</td>
+                </tr>
+                <tr>
+                  <td>mal</td>
+                  <td>мал</td>
+                  <td>шIу</td>
+                  <td>малефактивный аппликатив</td>
+                </tr>
+                <tr>
+                  <td>opt</td>
+                  <td>опт</td>
+                  <td></td>
+                  <td>оптатив</td>
+                </tr>
+                <tr>
+                  <td>p.1pl</td>
+                  <td>п.1мн</td>
+                  <td></td>
+                  <td>1 л. мн. ч. обладателя</td>
+                </tr>
+                <tr>
+                  <td>p.1sg</td>
+                  <td>п.1ед</td>
+                  <td></td>
+                  <td>1 л. ед. ч. обладателя</td>
+                </tr>
+                <tr>
+                  <td>p.2pl</td>
+                  <td>п.2мн</td>
+                  <td></td>
+                  <td>2 л. мн. ч. обладателя</td>
+                </tr>
+                <tr>
+                  <td>p.2sg</td>
+                  <td>п.2ед</td>
+                  <td></td>
+                  <td>2 л. ед. ч. обладателя</td>
+                </tr>
+                <tr>
+                  <td>p.3pl</td>
+                  <td>п.3мн</td>
+                  <td></td>
+                  <td>3 л. мн. ч. обладателя</td>
+                </tr>
+                <tr>
+                  <td>p.3sg</td>
+                  <td>п.3ед</td>
+                  <td></td>
+                  <td>3 л. ед. ч. обладателя</td>
+                </tr>
+                <tr>
+                  <td>p.rec</td>
+                  <td>п.взаим</td>
+                  <td></td>
+                  <td>реципрокальные (взаимно-возвратные) обладатели</td>
+                </tr>
+                <tr>
+                  <td>p.rel</td>
+                  <td>п.отн</td>
+                  <td></td>
+                  <td>относительный обладатель</td>
+                </tr>
+                <tr>
+                  <td>poss</td>
+                  <td>посс</td>
+                  <td></td>
+                  <td>отторжимая посессивность</td>
+                </tr>
+                <tr>
+                  <td>rel.sub</td>
+                  <td>отн.подч</td>
+                  <td></td>
+                  <td>относительный префикс факта / образа действия (зэрэ-)</td>
+                </tr>
+                <tr>
+                  <td>rel.tmp</td>
+                  <td>отн.врем</td>
+                  <td></td>
+                  <td>относительный префикс времени</td>
+                </tr>
+                <tr>
+                  <td>trans</td>
+                  <td>транс</td>
+                  <td>ры</td>
+                  <td>транслативный ‘через’ / инструментальный аппликатив</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Суффиксы
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+          <div class="card-body">
+            <table class="table table-sm" id="suffixes">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">тэг</th>
+                  <th scope="col">кириллический вариант</th>
+                  <th scope="col">морфема</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>abs</td>
+                  <td>им</td>
+                  <td>р</td>
+                  <td>абсолютив (именительный падеж; -р)</td>
+                </tr>
+                <tr>
+                  <td>abstr</td>
+                  <td>абстр</td>
+                  <td></td>
+                  <td>суффикс абстрактных имён (-гъэ)</td>
+                </tr>
+                <tr>
+                  <td>adj</td>
+                  <td>отнприл</td>
+                  <td></td>
+                  <td>суффикс «относительных прилагательных» (-рэ)</td>
+                </tr>
+                <tr>
+                  <td>adv</td>
+                  <td>обст</td>
+                  <td>эу</td>
+                  <td>адвербиалис (-эу)</td>
+                </tr>
+                <tr>
+                  <td>apl</td>
+                  <td>асс</td>
+                  <td>тхэ</td>
+                  <td>ассоциативное множественное число (-тхэ, -дыхэ)</td>
+                </tr>
+                <tr>
+                  <td>appr</td>
+                  <td></td>
+                  <td></td>
+                  <td>аппрехенсив 'как бы не' (-къо)</td>
+                </tr>
+                <tr>
+                  <td>asrt</td>
+                  <td></td>
+                  <td></td>
+                  <td>ассертив (-пэ)</td>
+                </tr>
+                <tr>
+                  <td>aug</td>
+                  <td>ауг</td>
+                  <td>шхо</td>
+                  <td>аугментатив ‘большой’ (-шхо)</td>
+                </tr>
+                <tr>
+                  <td>aux</td>
+                  <td>вспом</td>
+                  <td>щты</td>
+                  <td>инкорпорированный вспомогательный глагол (-щты- в сочетаниях щты-гъэ, щты-н и т.д.)</td>
+                </tr>
+                <tr>
+                  <td>car</td>
+                  <td></td>
+                  <td></td>
+                  <td>каритив (-нчъэ)</td>
+                </tr>
+                <tr>
+                  <td>cond</td>
+                  <td>усл</td>
+                  <td></td>
+                  <td>кондиционал / условное наклонение (-мэ)</td>
+                </tr>
+                <tr>
+                  <td>cont</td>
+                  <td></td>
+                  <td></td>
+                  <td>инкорпорированный глагольный корень -лӏэ-</td>
+                </tr>
+                <tr>
+                  <td>dificil</td>
+                  <td></td>
+                  <td></td>
+                  <td>дифицилитив 'сложно'</td>
+                </tr>
+                <tr>
+                  <td>down</td>
+                  <td></td>
+                  <td></td>
+                  <td>инкорпорированный глагольный корень -хы- 'вниз'</td>
+                </tr>
+                <tr>
+                  <td>el</td>
+                  <td></td>
+                  <td>кIы</td>
+                  <td>инкорпорированный глагольный корень -кӏы-</td>
+                </tr>
+                <tr>
+                  <td>exc1</td>
+                  <td>экскл1</td>
+                  <td></td>
+                  <td>интенсификатор -щэ</td>
+                </tr>
+                <tr>
+                  <td>exc2</td>
+                  <td>экскл2</td>
+                  <td></td>
+                  <td>интенсификатор -ӏо</td>
+                </tr>
+                <tr>
+                  <td>facil</td>
+                  <td></td>
+                  <td></td>
+                  <td>фацилитив 'легко'</td>
+                </tr>
+                <tr>
+                  <td>fut</td>
+                  <td>буд</td>
+                  <td></td>
+                  <td>будущее время (-щт)</td>
+                </tr>
+                <tr>
+                  <td>ill</td>
+                  <td></td>
+                  <td>хьэ</td>
+                  <td>инкорпорированный глагольный корень -хьэ-</td>
+                </tr>
+                <tr>
+                  <td>imp2</td>
+                  <td></td>
+                  <td></td>
+                  <td>императив на орэ-</td>
+                </tr>
+                <tr>
+                  <td>inc</td>
+                  <td></td>
+                  <td></td>
+                  <td>инцептив</td>
+                </tr>
+                <tr>
+                  <td>inch</td>
+                  <td></td>
+                  <td></td>
+                  <td>инхоатив (-жьэ)</td>
+                </tr>
+                <tr>
+                  <td>incorp</td>
+                  <td></td>
+                  <td></td>
+                  <td>инкорпорированное односложное существительное или прилагательное</td>
+                </tr>
+                <tr>
+                  <td>ins</td>
+                  <td>тв</td>
+                  <td>кIэ</td>
+                  <td>инструменталис</td>
+                </tr>
+                <tr>
+                  <td>int1</td>
+                  <td>инт1</td>
+                  <td></td>
+                  <td>интенсификатор -кӏэе</td>
+                </tr>
+                <tr>
+                  <td>int2</td>
+                  <td>инт2</td>
+                  <td></td>
+                  <td>интенсификатор -бзэ</td>
+                </tr>
+                <tr>
+                  <td>int3</td>
+                  <td>инт3</td>
+                  <td></td>
+                  <td>интенсификатор -е</td>
+                </tr>
+                <tr>
+                  <td>mod</td>
+                  <td>мод</td>
+                  <td>н</td>
+                  <td>модальный суффикс / масдар</td>
+                </tr>
+                <tr>
+                  <td>mult</td>
+                  <td>крат</td>
+                  <td></td>
+                  <td>мультипликатив (у числительных)</td>
+                </tr>
+                <tr>
+                  <td>neg</td>
+                  <td>отр</td>
+                  <td></td>
+                  <td>отрицательная форма</td>
+                </tr>
+                <tr>
+                  <td>neg_ep</td>
+                  <td></td>
+                  <td>эп</td>
+                  <td>суффиксальное отрицание (-эп)</td>
+                </tr>
+                <tr>
+                  <td>nmlz.ag</td>
+                  <td>нмз.аг</td>
+                  <td></td>
+                  <td>агентивная номинализация</td>
+                </tr>
+                <tr>
+                  <td>nmlz.loc</td>
+                  <td>нмз.лок</td>
+                  <td></td>
+                  <td>локативная номинализация</td>
+                </tr>
+                <tr>
+                  <td>nmlz.mnr</td>
+                  <td>нмз.спос</td>
+                  <td></td>
+                  <td>номинализация способа</td>
+                </tr>
+                <tr>
+                  <td>nmlz.time</td>
+                  <td>нмз.врем</td>
+                  <td></td>
+                  <td>темпоральная номинализация</td>
+                </tr>
+                <tr>
+                  <td>obl</td>
+                  <td>эрг</td>
+                  <td></td>
+                  <td>косвенный падеж (эргатив)</td>
+                </tr>
+                <tr>
+                  <td>ord</td>
+                  <td>пчисл</td>
+                  <td></td>
+                  <td>порядковое числительное</td>
+                </tr>
+                <tr>
+                  <td>pity</td>
+                  <td></td>
+                  <td></td>
+                  <td>глагольный суффикс -гущэ 'жаль'</td>
+                </tr>
+                <tr>
+                  <td>pl</td>
+                  <td>мн</td>
+                  <td></td>
+                  <td>множественное число</td>
+                </tr>
+                <tr>
+                  <td>pot</td>
+                  <td>пот</td>
+                  <td>шъу</td>
+                  <td>потенциалис</td>
+                </tr>
+                <tr>
+                  <td>pred</td>
+                  <td>пред</td>
+                  <td></td>
+                  <td>предикатив</td>
+                </tr>
+                <tr>
+                  <td>pst</td>
+                  <td>прош</td>
+                  <td></td>
+                  <td>прошедщее время</td>
+                </tr>
+                <tr>
+                  <td>pst2</td>
+                  <td>дпрош</td>
+                  <td></td>
+                  <td>давнопрошедшее время</td>
+                </tr>
+                <tr>
+                  <td>purp</td>
+                  <td></td>
+                  <td></td>
+                  <td>именной суффикс -хьа</td>
+                </tr>
+                <tr>
+                  <td>re</td>
+                  <td>ре</td>
+                  <td>жьы</td>
+                  <td>реверсив/рефактив ‘назад, снова’</td>
+                </tr>
+                <tr>
+                  <td>seem</td>
+                  <td></td>
+                  <td></td>
+                  <td>глагольный корень 'казаться'</td>
+                </tr>
+                <tr>
+                  <td>sg</td>
+                  <td>ед</td>
+                  <td></td>
+                  <td>единственное число</td>
+                </tr>
+                <tr>
+                  <td>sim</td>
+                  <td>одновр</td>
+                  <td></td>
+                  <td>одновременность</td>
+                </tr>
+                <tr>
+                  <td>up</td>
+                  <td></td>
+                  <td></td>
+                  <td>инкорпорированный глагольный корень -е- 'вверх'</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingFive">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Клитики
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+          <div class="card-body">
+            <table class="table table-sm" id="clitics">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">тэг</th>
+                  <th scope="col">кириллический вариант</th>
+                  <th scope="col">морфема</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>add</td>
+                  <td></td>
+                  <td>и</td>
+                  <td>аддитивная клитика (усилительная/соединительная частица -и)</td>
+                </tr>
+                <tr>
+                  <td>coord</td>
+                  <td>соч</td>
+                  <td></td>
+                  <td>сочинительная клитика (-рэ)</td>
+                </tr>
+                <tr>
+                  <td>cs</td>
+                  <td>конс1</td>
+                  <td>ти</td>
+                  <td>консекутив ‘так что’ (-ти)</td>
+                </tr>
+                <tr>
+                  <td>cs2</td>
+                  <td>конс2</td>
+                  <td>шъ</td>
+                  <td>консекутив ‘так что’ (-шъ)</td>
+                </tr>
+                <tr>
+                  <td>emp</td>
+                  <td>усил</td>
+                  <td>ба</td>
+                  <td>эмфатическая клитика (-ба)</td>
+                </tr>
+                <tr>
+                  <td>q</td>
+                  <td>вопр</td>
+                  <td></td>
+                  <td>вопросительная частица</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 border-light">
+        <div class="card-header" id="headingSix">
+          <h5 class="mb-0">
+            <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Лексические пометы и другие тэги
+            </button>
+          </h5>
+        </div>
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+          <div class="card-body">
+            <table class="table table-sm" id="lextype_and_others">
+              <thead>
+                <tr class="table-borderless">
+                  <th scope="col">тэг</th>
+                  <th scope="col">кириллический вариант</th>
+                  <th scope="col">описание</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>abbr</td>
+                  <td></td>
+                  <td>аббревиатура</td>
+                </tr>
+                <tr>
+                  <td>alt_stem</td>
+                  <td></td>
+                  <td>чередование (а/э) в корне или префиксе</td>
+                </tr>
+                <tr>
+                  <td>alt_stem1</td>
+                  <td></td>
+                  <td>чередование (а/э) в первом слоге от конца корня</td>
+                </tr>
+                <tr>
+                  <td>alt_stem2</td>
+                  <td></td>
+                  <td>чередование (а/э) во втором слоге от конца корня</td>
+                </tr>
+                <tr>
+                  <td>dat_v</td>
+                  <td></td>
+                  <td>глагол, требующий дативной деривации</td>
+                </tr>
+                <tr>
+                  <td>famn</td>
+                  <td></td>
+                  <td>фамилия</td>
+                </tr>
+                <tr>
+                  <td>geo</td>
+                  <td></td>
+                  <td>топоним</td>
+                </tr>
+                <tr>
+                  <td>intr</td>
+                  <td>нпрх</td>
+                  <td>непереходный глагол</td>
+                </tr>
+                <tr>
+                  <td>patrn</td>
+                  <td></td>
+                  <td>отчество</td>
+                </tr>
+                <tr>
+                  <td>persn</td>
+                  <td></td>
+                  <td>личное имя</td>
+                </tr>
+                <tr>
+                  <td>rus</td>
+                  <td>rus</td>
+                  <td>русское заимствование</td>
+                </tr>
+                <tr>
+                  <td>stat</td>
+                  <td>стат</td>
+                  <td>стативный глагол</td>
+                </tr>
+                <tr>
+                  <td>tr</td>
+                  <td>прх</td>
+                  <td>переходный глагол</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <h3 id="syntactic_annotation" class="h3">Синтаксическая информация</h3>
+  <div class="annotation_info" id="syntactic_annotation_info">
+    <p class="mb-2">Адыгейский корпус не сопровождается синтаксической разметкой. Тем не менее мы рекомендуем использовать возможности корпуса в отношении сочетаний слов. Так, средства корпуса позволяют поиск графических слов (= слов, разделённых пробелом), которые идут одно за другим (***) или, наоборот, находятся на некоторой дистанции (***). Полезной может быть также информация о расположении слова относительно точки или другого знака, указывающего на границу предложений. ***</p>
+  </div>
+
+
+  <h3 id="translation_annotation" class="h3">Перевод на русский язык</h3>
+  <div class="annotation_info" id="translation_annotation_info">
+    <p class="mb-2">Часть адыгейских текстов сопровождаются русским переводом.  Как правило, такой перевод уже имелся, хотя в ряде случаев разработчикам корпуса пришлось его отредактировать. Таким образом, этот подкорпус нельзя считать параллельным корпусом в строгом смысле, сохраняющим все оригинальные тексты.</p>
+    <p class="mb-2">Важно, что не всегда у нас имеется информация, какой из текстов – адыгейский или русский – является оригиналом, а какой – переводом.
+      Список текстов с русским переводом представлен здесь <a>***</a>.</p>
+    <p class="mb-2">Об ошибках в подкорпусе с переводом см. п. <a href="#alignment_mistakes">Ошибки в выравнивании текста и русского перевода</a>.</p>
+  </div>
+
+
+  <h3 id="other_annotation" class="h3">Прочая информация</h3>
+  <div class="annotation_info" id="other_annotation_info">
+    <p class="mb-2">Все тексты сопровождаются указанием на источник. Жанр текста. Датировка текста. ***</p>
+  </div>
+
+
+  <h3 id="possible_mistakes" class="h3">Возможные ошибки</h3>
+
+  <h5 id="text_mistakes" class="h5">Ошибки в тексте</h5>
+  <div class="annotation_info" id="text_mistakes_info">
+    <p class="mb-2">Часть текстов были получены в результате сканирования и последующего распознания с помощью программы FineReader – такие тексты имеют специальную пометку OCR.</p>
+    <p class="mb-2">Автоматическое распознавание  может выдавать неправильные тексты – с другими последовательностями символов по сравнению с оригиналом. Хотя по большей части такие ошибки были устранены вручную, вероятность их по-прежнему велика, поэтому мы призываем пользователя обращаться с подобными текстами с повышенной аккуратностью.</p>
+    <p class="mb-2"><i class="fa fa-exclamation" aria-hidden="true"></i> Мы ищем волонтёров-носителей адыгейского языка, готовых вычитывать автоматически распознанные тексты.</p>
+  </div>
+
+  <h5 id="parsing_mistakes" class="h5">Ошибки в морфологическом анализе</h5>
+  <div class="annotation_info" id="parsing_mistakes_info">
+    <p class="mb-2">Нередко адыгейское слово может быть проанализировано несколькими способами. Для конкретного словоупотребления правильным обычно является лишь один вариант разбора, но поскольку морфологический анализ осуществляется автоматически, в корпусе остаются все варианты.</p>
+    <p class="mb-2">Неправильный разбор может иметь две причины.</p>
+    <p class="mb-2">Во-первых, может быть неправильно подобрана лемма (словарная единица, используемая для анализа).</p>
+    <p class="mb-2">Во-вторых, может быть проведён неверный морфологический анализ – разбор на аффиксы и корень. Ошибочный морфологический анализ может быть, в свою очередь, либо теоретически допустимым, либо вовсе не допустимым, отражающим ошибки в программе-анализаторе. При обнаружении недопустимого анализа мы просим <a href="../about_authors/">сообщать</a> о нём разработчикам. Существенно, однако, что анализатор не учитывает ***</p> 
+    <p class="mb-2"><i class="fa fa-exclamation" aria-hidden="true"></i> Мы ищем волонтёров-носителей адыгейского языка, готовых снимать грамматическую омонимию – отбраковывать заведомо неправильные варианты разбора.</p>
+  </div>
+
+  <h5 id="pos_mistakes" class="h5">Ошибки в частеречной характеристике</h5>
+  <div class="annotation_info" id="pos_mistakes_info">
+    <p class="mb-2">Частеречная характеристика частично проставлялась автоматически – на основании русского перевода. Соответственно, не исключается неправильное присвоение части речи адыгейской словоформе.</p>
+  </div>
+
+  <h5 id="alignment_mistakes" class="h5">Ошибки в выравнивании текста и русского перевода</h5>
+  <div class="annotation_info" id="alignment_mistakes_info">
+    <p class="mb-2">При переводе текста в источнике переводчики нередко отклоняются от оригинала. Ошибки, связанные с вольностью перевода, устранялись вручную и лишь частично.</p>
+    <p class="mb-2">При наличии русского перевода текста сопоставление адыгейского текста и русского соответствия частично производится автоматически. Соответственно, нельзя исключать, что программа подберёт неверное русское соответствие. При обнаружении несоответствия, не связанного с вольностью перевода, просим <a href="../about_authors/">сообщать</a> о нём разработчикам.</p>
+  </div>
+
+
+  <h5 id="attribution_mistakes" class="h5">Ошибки в датировке текста</h5>
+  <div class="annotation_info" id="attribution_mistakes_info">
+    <p class="mb-2">Во многих случаях датировка текста является условной – из-за недостатка информации мы вынуждены исходить из года используемой нами публикации.</p>
+  </div>
+
+</div>
+
+   
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+
+    </section>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../../vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../../js/creative.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+  </body>
+
+</html>

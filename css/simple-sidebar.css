@@ -244,10 +244,15 @@ body {
   .navbar-nav > .nav-item {
     background-color: #234d06;
   }
-
+  .navbar-nav > li.nav-item > a.nav-link {
+    border: none!important;
+  }
+  .navbar-nav > li.nav-item > a.nav-link:hover {
+    border: none!important;
+  }
 }
 
-@media(max-width:925px) {
+@media(max-width:992px) {
   #wrapper {
     padding-left: 0;
   }

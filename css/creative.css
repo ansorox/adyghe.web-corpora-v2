@@ -111,7 +111,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   height: 100%;
-  padding: 11px;
+  position: absolute;
   /*width: 250px;*/
   /*background: #89939b;*/
   /*background: #94acc0;*/
@@ -125,6 +125,12 @@ img::-moz-selection {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
 }
 
+#mainNav .navbar-brand > a {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding: 11px;
+}
 
 #mainNav .nav-container {
   /*height: 100%;*/
@@ -200,6 +206,24 @@ img::-moz-selection {
   border:  1px solid #fca311;
 }
 
+.navbar{
+/*   z-index should be above .close-navbar-toggler */
+/*  z-index:2;
+*/}
+
+.close-navbar-toggler{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index:1;
+  cursor:pointer;
+}
+
+.close-navbar-toggler.collapsed{
+/*  z-index:-1;*/
+}
 
 .ml-2 {
   margin: 0px!important;

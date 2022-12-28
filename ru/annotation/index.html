@@ -40,13 +40,18 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <a class="close-navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container nav-container">
         <div class="navbar-brand">
           <a href="../../">
             <img src="../../img/64px-AdygheFlag.png" class="mr-3" style="opacity: 0.8">
           </a>
         </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-dark navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -253,7 +258,7 @@
                 </tr>
                 <tr>
                   <td>ABS</td>
-                  <td>абсолютив (именительный падежа)</td>
+                  <td>абсолютив (именительный падеж)</td>
                 </tr>
                 <tr>
                   <td>ABSTR</td>
@@ -417,7 +422,7 @@
                 </tr>
                 <tr>
                   <td>LOC</td>
-                  <td>один из нескольких специальных локативных аппликативов (кроме щы-)</td>
+                  <td>специальный локативный аппликатив-преверб (кроме щы-)</td>
                 </tr>
                 <tr>
                   <td>MAL</td>
@@ -437,7 +442,7 @@
                 </tr>
                 <tr>
                   <td>NMLZ.AG</td>
-                  <td>абстрактная номинализация (-гъэ)</td>
+                  <td>агентивная номинализация (-кӏо)</td>
                 </tr>
                 <tr>
                   <td>NMLZ.LOC</td>
@@ -588,12 +593,12 @@
                   <td>case</td>
                   <td>OBL, OBL.PL, ABS, ERG, INS, ADV</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td>nom</td>
                   <td>ABS</td>
-                </tr>
+                </tr> -->
                 <tr>
-                  <td>erg</td>
+                  <td>oblx</td>
                   <td>OBL, OBL.PL</td>
                 </tr>
                 <tr>
@@ -1062,6 +1067,12 @@
                   <td>суффикс абстрактных имён (-гъэ)</td>
                 </tr>
                 <tr>
+                  <td>add</td>
+                  <td></td>
+                  <td>и</td>
+                  <td>аддитивная клитика (усилительная/соединительная частица -и)</td>
+                </tr>
+                <tr>
                   <td>adj</td>
                   <td>отнприл</td>
                   <td></td>
@@ -1122,6 +1133,24 @@
                   <td>инкорпорированный глагольный корень -лӏэ-</td>
                 </tr>
                 <tr>
+                  <td>coord</td>
+                  <td>соч</td>
+                  <td></td>
+                  <td>сочинительная клитика (-рэ)</td>
+                </tr>
+                <tr>
+                  <td>cs</td>
+                  <td>конс1</td>
+                  <td>ти</td>
+                  <td>консекутив ‘так что’ (-ти)</td>
+                </tr>
+                <tr>
+                  <td>cs2</td>
+                  <td>конс2</td>
+                  <td>шъ</td>
+                  <td>консекутив ‘так что’ (-шъ)</td>
+                </tr>
+                <tr>
                   <td>dificil</td>
                   <td></td>
                   <td></td>
@@ -1138,6 +1167,12 @@
                   <td></td>
                   <td>кIы</td>
                   <td>инкорпорированный глагольный корень -кӏы-</td>
+                </tr>
+                <tr>
+                  <td>emp</td>
+                  <td>усил</td>
+                  <td>ба</td>
+                  <td>эмфатическая клитика (-ба)</td>
                 </tr>
                 <tr>
                   <td>exc1</td>
@@ -1179,7 +1214,7 @@
                   <td>inc</td>
                   <td></td>
                   <td></td>
-                  <td>инцептив</td>
+                  <td>инцептив (-хэ)</td>
                 </tr>
                 <tr>
                   <td>inch</td>
@@ -1196,7 +1231,7 @@
                 <tr>
                   <td>ins</td>
                   <td>тв</td>
-                  <td>кIэ</td>
+                  <td>кӏэ</td>
                   <td>инструменталис</td>
                 </tr>
                 <tr>
@@ -1245,25 +1280,25 @@
                   <td>nmlz.ag</td>
                   <td>нмз.аг</td>
                   <td></td>
-                  <td>агентивная номинализация</td>
+                  <td>агентивная номинализация (-кӏо)</td>
                 </tr>
                 <tr>
                   <td>nmlz.loc</td>
                   <td>нмз.лок</td>
                   <td></td>
-                  <td>локативная номинализация</td>
+                  <td>локативная номинализация (-пӏэ)</td>
                 </tr>
                 <tr>
                   <td>nmlz.mnr</td>
                   <td>нмз.спос</td>
                   <td></td>
-                  <td>номинализация способа</td>
+                  <td>номинализация способа (-кӏэ)</td>
                 </tr>
                 <tr>
                   <td>nmlz.time</td>
                   <td>нмз.врем</td>
                   <td></td>
-                  <td>темпоральная номинализация</td>
+                  <td>темпоральная номинализация (-гъо)</td>
                 </tr>
                 <tr>
                   <td>obl</td>
@@ -1281,7 +1316,7 @@
                   <td>pity</td>
                   <td></td>
                   <td></td>
-                  <td>глагольный суффикс -гущэ 'жаль'</td>
+                  <td>глагольный суффикс <span class="tooltip_host">-гущэ <span class="tooltiptext">часто представляется как отдельное слово</span></span> 'жаль'</td>
                 </tr>
                 <tr>
                   <td>pl</td>
@@ -1299,13 +1334,13 @@
                   <td>pred</td>
                   <td>пред</td>
                   <td></td>
-                  <td>предикатив</td>
+                  <td>предикативная форма местоимения</td>
                 </tr>
                 <tr>
                   <td>pst</td>
                   <td>прош</td>
                   <td></td>
-                  <td>прошедщее время</td>
+                  <td>прошедшее время</td>
                 </tr>
                 <tr>
                   <td>pst2</td>
@@ -1318,6 +1353,12 @@
                   <td></td>
                   <td></td>
                   <td>именной суффикс -хьа</td>
+                </tr>
+                <tr>
+                  <td>q</td>
+                  <td>вопр</td>
+                  <td></td>
+                  <td>вопросительная частица</td>
                 </tr>
                 <tr>
                   <td>re</td>
@@ -1355,7 +1396,7 @@
         </div>
       </div>
 
-      <div class="card mb-3 border-light">
+<!--       <div class="card mb-3 border-light">
         <div class="card-header" id="headingFive">
           <h5 class="mb-0">
             <button class="btn btn-link text-dark w-100 text-left collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -1416,7 +1457,7 @@
           </div>
         </div>
       </div>
-
+ -->
       <div class="card mb-3 border-light">
         <div class="card-header" id="headingSix">
           <h5 class="mb-0">
@@ -1470,6 +1511,11 @@
                   <td>geo</td>
                   <td></td>
                   <td>топоним</td>
+                </tr>
+                <tr>
+                  <td>inal</td>
+                  <td></td>
+                  <td>неотторжимая принадлежность</td>
                 </tr>
                 <tr>
                   <td>intr</td>
